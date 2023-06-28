@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<decorators defaultdir="/decorators">
+
+    <!-- Khong apply giao dien cho cac url api -->
+    <excludes>
+        <pattern>/api*</pattern>
+    </excludes>
+
+    <!-- filler giao dien -->
+    <decorator name="admin" page="admin.jsp">
+        <pattern>/admin*</pattern>
+    </decorator>
+
+    <decorator name="user" page="user.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    <!-- filter login -->
+    <decorator name="login" page="login.jsp">
+        <pattern>/login</pattern>
+    </decorator>
+    <!-- filter register -->
+    <decorator name="register" page="register.jsp">
+        <pattern>/register</pattern>
+    </decorator>
+</decorators>
