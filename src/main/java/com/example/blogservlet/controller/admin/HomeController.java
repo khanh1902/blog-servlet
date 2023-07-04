@@ -30,7 +30,7 @@ public class HomeController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("categories", commentService.getTotalItem());
+        req.setAttribute("categories", categoriesService.getTotalItem());
         req.setAttribute("news", newsService.getTotalItem());
         req.setAttribute("comments", commentService.getTotalItem());
         req.setAttribute("users", userService.getTotalItem());
